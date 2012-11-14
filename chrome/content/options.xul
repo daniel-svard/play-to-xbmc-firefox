@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+ 
+<prefwindow 
+     title="XBMC Remote Preferences"
+     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ 
+	<prefpane label="Link Target Finder Preferences">
+		<preferences>
+			<preference id="xbmc-url" name="xbmc.url" type="string"/>
+			<preference id="xbmc-port" name="xbmc.port" type="string"/>
+		</preferences>
+		
+		<groupbox>
+			<caption label="Settings"/>
+			<grid>
+				<columns>
+					<column flex="5"/>
+					<column flex="1"/>
+				</columns>
+				<rows>
+                    <row>
+                        <label control="xbmc-url" value="URL"/>
+                        <textbox id="xbmc-url" preference="xbmc-url"/>
+                    </row>
+                    <row>
+                        <label control="xbmc-port" value="Port"/>
+                        <textbox id="xbmc-port" preference="xbmc-port"/>
+                    </row>
+				</rows>
+			</grid>
+		</groupbox>	
+		
+	</prefpane>
+ 
+</prefwindow>
